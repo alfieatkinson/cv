@@ -1,0 +1,68 @@
+name: Build and Deploy CV
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v3
+        with:
+          typst-version: latest
+
+      - name: Create dist directory
+        run: mkdir -p dist
+
+      - name: Compile CV with bionic reading
+        run: |
+          sed 's/#let use-bionic = false/#let use-bionic = true/' src/curriculum-vitae.typ | typst compile - dist/curriculum-vitae-bionic.pdf
+          echo "✓ Created: dist/curriculum-vitae-bionic.pdf"
+
+      - name: Compile CV without bionic reading
+        run: |
+          sed 's/#let use-bionic = true/#let use-bionic = false/' src/curriculum-vitae.typ | typst compile - dist/curriculum-vitae-standard.pdf
+          echo "✓ Created: dist/curriculum-vitae-standard.pdf"
+
+      - name: Copy HTML files
+        run: |
+          cp src/index.html dist/index.html
+          cp src/cv-accessible.html dist/cv-accessible.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

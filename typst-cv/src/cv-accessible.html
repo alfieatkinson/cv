@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae - Alfie Atkinson</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        line-height: 1.6;
+        color: #1a202c;
+        background: #fff;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem 1.5rem;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 2px solid #663399;
+        padding-bottom: 1.5rem;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #663399;
+      }
+      .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+      }
+      .contact-info a {
+        color: #663399;
+        text-decoration: none;
+      }
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+        color: #663399;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .job,
+      .edu-item {
+        margin-bottom: 1.5rem;
+      }
+      .job-header,
+      .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
+        margin-bottom: 0.5rem;
+      }
+      .job-title,
+      .edu-degree {
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+      .job-company,
+      .edu-institution {
+        font-style: italic;
+        color: #4a5568;
+      }
+      .job-dates,
+      .edu-dates {
+        color: #718096;
+        font-size: 0.9rem;
+      }
+      .job-location,
+      .edu-location {
+        color: #718096;
+        font-size: 0.9rem;
+      }
+      ul {
+        margin-left: 1.5rem;
+        margin-top: 0.5rem;
+      }
+      li {
+        margin-bottom: 0.5rem;
+      }
+      .skills-list {
+        list-style: none;
+        margin-left: 0;
+      }
+      .skills-list li {
+        margin-bottom: 0.75rem;
+      }
+      .skills-list strong {
+        color: #663399;
+      }
+      @media (max-width: 640px) {
+        .job-header,
+        .edu-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Alfie Atkinson</h1>
+        <div class="contact-info">
+          <span>Lincoln, UK</span>
+          <a href="mailto:career@alfieatkinson.dev">career@alfieatkinson.dev</a>
+          <a href="https://github.com/alfieatkinson"
+            >github.com/alfieatkinson</a
+          >
+          <a href="https://linkedin.com/in/alfieatkinson"
+            >linkedin.com/in/alfieatkinson</a
+          >
+          <a href="https://alfieatkinson.dev">alfieatkinson.dev</a>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h2>Summary</h2>
+          <p>
+            I'm a front-end web developer and UX/UI designer focused on building
+            interfaces that look beautiful, feel effortless, behave predictably,
+            and scale cleanly over time. I care about accessibility and
+            neuro-inclusive design as a baseline for good design. When something
+            works well for people with different needs, it tends to work better
+            for everyone.
+          </p>
+        </section>
+
+        <section>
+          <h2>Work Experience</h2>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">
+                  Front-End Web Developer & UX Engineer
+                </div>
+                <div class="job-company">
+                  Students' Union Management System (SUMS)
+                </div>
+              </div>
+              <div>
+                <div class="job-dates">July 2025 - Present</div>
+                <div class="job-location">Lincoln, UK</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Re-architected the information architecture for a large-scale SU
+                website (20k+ users), consolidating 60+ navigation items into 6
+                task-oriented sections. Independently led the restructuring,
+                defining navigation patterns and validating changes through
+                stakeholder, staff, and user feedback.
+              </li>
+              <li>
+                Led front-end development for the
+                <a href="http://engineshed.co.uk">Engine Shed</a>, delivering a
+                full rebuild for a commercial platform with ~30k monthly users
+                and reducing clicks-to-purchase from 8–11 to 3–5 across mapped
+                user journeys.
+              </li>
+              <li>
+                Designed UX and UI for an SU app integration with a national
+                membership organisation (7m+ members), defining cross‑system
+                user flows and interface patterns and iterating based on
+                stakeholder feedback.
+              </li>
+              <li>
+                Conducted full-site UX and accessibility audits, resolving WCAG
+                2.1 compliance issues and improving semantic structure through
+                screen reader and keyboard navigation testing.
+              </li>
+              <li>
+                Rebuilt
+                <a href="https://northamptonunion.com/"
+                  >Northampton Students' Union's</a
+                >
+                website from a legacy ExpressionEngine front-end to a
+                component-based system powered by Pluto API, delivering 8+ core
+                pages and 12+ reusable components for 12k+ students.
+              </li>
+              <li>
+                Designed a multi-level email analytics dashboard (campaign,
+                email, and link-level) in Figma, surfacing engagement trends,
+                device breakdowns, and funnel drop-offs to support data-driven
+                campaign optimisation.
+              </li>
+              <li>
+                Delivered the
+                <a href="https://theswanlincoln.co.uk/guesthouse"
+                  >Swan Guesthouse's</a
+                >
+                microsite within 2 days under a strict commercial deadline,
+                ensuring accurate content launch for peak booking season and
+                protecting revenue.
+              </li>
+              <li>
+                Engineered 4 Laravel API endpoints to replace legacy
+                ExpressionEngine functionality for the 'SUggestions' module
+                migration, enabling efficient pagination to cut load times by
+                80% and delivering richer detail to improve UX.
+              </li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">Software Engineer (Internship)</div>
+                <div class="job-company">Synx Games</div>
+              </div>
+              <div>
+                <div class="job-dates">Feb 2025 - Jun 2025</div>
+                <div class="job-location">Lincoln, UK</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Co-led development of a multiplayer web-based game prototype,
+                building UI and core gameplay systems using TypeScript and React
+                within an 8-week delivery window.
+              </li>
+              <li>
+                Collaborated on product planning and pitching, contributing to a
+                £500k Roblox Creator Fund application with retention and
+                monetisation strategy.
+              </li>
+            </ul>
+          </article>
+
+          <article class="job">
+            <div class="job-header">
+              <div>
+                <div class="job-title">
+                  Software & Data Technician (Internship)
+                </div>
+                <div class="job-company">B‑Hive Innovations</div>
+              </div>
+              <div>
+                <div class="job-dates">May 2024 - Sept 2024</div>
+                <div class="job-location">Lincoln, UK</div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Improved reliability and data quality in Python-based
+                applications by diagnosing and resolving critical pipeline
+                issues, supporting accurate downstream analytics and model
+                training.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+
+          <article class="edu-item">
+            <div class="edu-header">
+              <div>
+                <div class="edu-degree">
+                  Master of Science in Computer Science
+                </div>
+                <div class="edu-institution">University of Lincoln</div>
+              </div>
+              <div>
+                <div class="edu-dates">Sept 2024 - Sept 2025</div>
+                <div class="edu-location">Lincoln, UK</div>
+              </div>
+            </div>
+            <p>Distinction-level average (86%)</p>
+            <p><em>Dissertation postponed for medical reasons</em></p>
+          </article>
+
+          <article class="edu-item">
+            <div class="edu-header">
+              <div>
+                <div class="edu-degree">
+                  Bachelor of Science in Computer Science
+                </div>
+                <div class="edu-institution">University of Lincoln</div>
+              </div>
+              <div>
+                <div class="edu-dates">Sept 2021 - May 2024</div>
+                <div class="edu-location">Lincoln, UK</div>
+              </div>
+            </div>
+            <p>First Class with Honours</p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Skills</h2>
+          <ul class="skills-list">
+            <li>
+              <strong>Web Development:</strong> TypeScript, JavaScript, React,
+              Next.js, Tailwind CSS, GSAP, Semantic HTML, REST APIs
+            </li>
+            <li>
+              <strong>UX/UI:</strong> Figma, Information Architecture, User
+              Flows, Accessibility Audits (WCAG 2.1), Usability Validation
+            </li>
+            <li>
+              <strong>Backend & Tooling:</strong> Git, Docker, PayloadCMS, PHP,
+              Python, Laravel, Django (REST), PostgreSQL
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

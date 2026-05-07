@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Alfie Atkinson</title>
+    <style>
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+      }
+      .controls {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 0.75rem 1rem;
+        z-index: 100;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .controls label {
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+      .controls select {
+        padding: 0.5rem;
+        border: 1px solid #cbd5e0;
+        border-radius: 4px;
+        font-size: 0.9rem;
+      }
+      .viewer {
+        margin-top: 3.5rem;
+        height: calc(100vh - 3.5rem);
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="controls">
+      <label for="version-select">Version:</label>
+      <select id="version-select" aria-label="Select CV version">
+        <option value="standard">Standard PDF</option>
+        <option value="bionic">Bionic PDF</option>
+        <option value="accessible">Accessible HTML</option>
+      </select>
+    </div>
+    <div class="viewer">
+      <iframe
+        id="cv-viewer"
+        src="../dist/curriculum-vitae-standard.pdf"
+        title="Curriculum Vitae"
+      ></iframe>
+    </div>
+    <script>
+      const select = document.getElementById("version-select");
+      const viewer = document.getElementById("cv-viewer");
+
+      select.addEventListener("change", (e) => {
+        const version = e.target.value;
+        if (version === "bionic") {
+          viewer.src = "../dist/curriculum-vitae-bionic.pdf";
+        } else if (version === "standard") {
+          viewer.src = "../dist/curriculum-vitae-standard.pdf";
+        } else if (version === "accessible") {
+          viewer.src = "cv-accessible.html";
+        }
+      });
+    </script>
+  </body>
+</html>
