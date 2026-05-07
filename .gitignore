@@ -1,6 +1,3 @@
-# Compiled PDFs
-dist/
-
 # macOS
 .DS_Store
 
