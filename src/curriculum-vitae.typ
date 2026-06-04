@@ -79,7 +79,7 @@
 == Work Experience
 
 #work(
-  title: "Front-End Web Developer & UX Engineer",
+  title: "UX/UI Engineer & Front-End Web Developer",
   location: "Lincoln, UK",
   company: "Students' Union Management System (SUMS)",
   dates: dates-helper(start-date: "July 2025", end-date: "Present"),
