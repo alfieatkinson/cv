@@ -88,7 +88,7 @@
   company: "Students' Union Management System (SUMS)",
   dates: dates-helper(start-date: "Mar 2026", end-date: "Present"),
 )
-- #bionic[Redesigned the Lincoln Students' Union website as a mobile-first experience, restructuring 60+ pages from a 3-level mega-menu into 5 task-led navigation areas, each with 5–6 children and a maximum 2-level global navigation depth.]
+- #bionic[Redesigned the Lincoln Students' Union website as a mobile-first experience, restructuring 60+ pages from a 3-level mega-menu into 5 task-led navigation areas, each with 5–6 children at a 2-level navigation depth.]
 - #bionic[Designed a contextual site-wide navigation model using reusable feature cards, quick links, and in-page signposting to help users move between related services from any point in the site.]
 - #bionic[Created end-to-end user flows for high-traffic journeys, reducing friction across joining communities, finding support, attending events, submitting suggestions, contacting representatives, and accessing account services.]
 - #bionic[Produced mobile-first wireframes and an interactive high-fidelity Figma prototype to validate navigation structure, menu behaviour, page hierarchy, reusable content patterns, and cross-device journeys before development.]
