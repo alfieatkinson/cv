@@ -74,7 +74,7 @@
 
 == Summary
 
-#bionic[UX/UI engineer and front-end developer designing and building accessible, scalable digital products. Working across information architecture, user flows, wireframes, prototypes, design systems, and front-end implementation, with a particular focus on mobile-first design, accessibility, neuro-inclusive design, and interfaces that feel predictable.]
+#bionic[Front-End Web Developer designing and delivering accessible, scalable, customer-facing digital products from discovery through to release. Experienced across UX/UI, information architecture, user flows, wireframes, prototypes, design systems, API-integrated front-end implementation, and stakeholder-led discovery and iteration, with a particular focus on clean and maintainable code, WCAG accessibility, performance, and predictable, neuro-inclusive interfaces.]
 
 /*
 #bionic[UX/UI engineer and front-end developer designing accessible, scalable digital products across information architecture, mobile-first user journeys, prototyping, design systems, and React-based implementation. Strong focus on WCAG accessibility, neuro-inclusive design, contextual navigation, and predictable user experiences.]
@@ -82,6 +82,26 @@
 
 == Work Experience
 
+#work(
+  title: "Front-End Web Developer",
+  location: "Lincoln, UK",
+  company: "Students' Union Management System (SUMS)",
+  dates: dates-helper(start-date: "July 2025", end-date: "Present"),
+)
+- #bionic[Took ownership of UX discovery and information architecture for the Lincoln Students' Union website redesign, restructuring 60+ pages from a 3-level mega-menu into 5 task-led navigation areas with a 2-level navigation depth.]
+- #bionic[Designed a contextual site-wide navigation model using reusable feature cards, quick links, and in-page signposting to help users move between related services from any point in the site.]
+- #bionic[Created end-to-end user flows for high-traffic journeys, reducing friction across joining communities, finding support, attending events, submitting suggestions, contacting representatives, and accessing account services.]
+- #bionic[Produced full-site mobile-first wireframes, alternative layout options, and an interactive high-fidelity Figma prototype to validate navigation structure, menu behaviour, page hierarchy, and iterate on stakeholder feedback.]
+- #bionic[Conducted UX and accessibility audits across client sites and internal systems, resolving WCAG 2.1 issues and improving SEO-readiness through semantic HTML, keyboard and screen reader support, cognitive accessibility, and performance.]
+- #bionic[Led front-end development for the #link("http://engineshed.co.uk")[Engine Shed] rebuild, defining maintainable code quality standards, embedding usability testing, and reducing clicks to purchase from 8–11 to 3–5 on a platform with 30k monthly users.]
+- #bionic[Rebuilt #link("https://northamptonunion.com/")[Northampton Students' Union's] website from a legacy ExpressionEngine front end to a component-based system powered by the Pluto API, delivering 8+ core pages and 12+ reusable components for 12k+ students.]
+- #bionic[Engineered 4 Laravel API endpoints to replace legacy ExpressionEngine functionality for the SUggestions module migration, enabling pagination, richer detail views, and an estimated 80% reduction in load times.]
+- #bionic[Designed components for an app integration with a national membership organisation serving 7m+ members in collaboration with external stakeholders and internal teams.]
+- #bionic[Represented SUMS in customer-facing discovery and consultation sessions with students' unions including Westminster and Kent, advising on UX, accessibility, coding standards, componentisation, and editable content structures, contributing to client confidence in SUMS' front-end delivery.]
+- #bionic[Researched and designed a multi-level email analytics dashboard for a new email campaign feature within SUMS, visualising performance metrics with contextual tooltips in a user-friendly interface to support data-driven insights.]
+/*- #bionic[Delivered the #link("https://theswanlincoln.co.uk/guesthouse")[Swan Guesthouse's] microsite within 2 days under a strict commercial deadline, supporting accurate content launch for peak booking season and protecting revenue.]*/
+
+/*
 #work(
   title: "UX/UI Engineer",
   location: "Lincoln, UK",
@@ -106,6 +126,7 @@
 - #bionic[Rebuilt #link("https://northamptonunion.com/")[Northampton Students' Union's] website from a legacy ExpressionEngine front end to a component-based system powered by the Pluto API, delivering 8+ core pages and 12+ reusable components for 12k+ students.]
 - #bionic[Engineered 4 Laravel API endpoints to replace legacy ExpressionEngine functionality for the SUggestions module migration, enabling pagination, richer detail views, and an estimated 80% reduction in load times.]
 - #bionic[Delivered the #link("https://theswanlincoln.co.uk/guesthouse")[Swan Guesthouse's] microsite within 2 days under a strict commercial deadline, supporting accurate content launch for peak booking season and protecting revenue.]
+*/
 
 #work(
   title: "Software Engineer (Internship)",
@@ -166,6 +187,6 @@
 
 == Skills
 - *Web Development:* #bionic[TypeScript, JavaScript, React, Next.js, Tailwind CSS, GSAP, semantic HTML, REST APIs]
-- *UX/UI & Product Design:* #bionic[Figma, information architecture, mobile-first design, user flows, wireframing, interactive prototyping, navigation design, dashboard design, usability validation]
-- *Accessibility & Design Systems:* #bionic[WCAG 2.1, accessibility audits, cognitive accessibility, keyboard navigation, screen reader testing, component libraries, reusable content patterns]
-- *Backend & Tooling:* #bionic[Git, Docker, PHP, Python, Laravel, Django REST Framework, PostgreSQL, PayloadCMS]
+- *UX/UI & Product Design:* #bionic[Figma, information architecture, mobile-first design, user flows, wireframing, interactive prototyping, usability validation, stakeholder iteration]
+- *Accessibility & Design Systems:* #bionic[WCAG 2.1, accessibility audits, cognitive accessibility, keyboard navigation, screen reader testing, component libraries, reusable content patterns, inclusive interaction design]
+- *Backend, APIs & Tooling:* #bionic[Git, Docker, PHP, Python, Laravel, Django, REST APIs, PostgreSQL, PayloadCMS, Vite, NPM]
